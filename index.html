@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="media.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Social links profile</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+    :root {
+      --location-color-green: hsl(75, 94%, 57%);
+      --main-color-white: hsl(0, 0%, 100%);
+      --grey-700: hsl(0, 0%, 20%);
+      --grey-800: hsl(0, 0%, 12%);
+      --grey-900: hsl(0, 0%, 8%);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-flow: column;
+      min-height: 100vh;
+      min-height: 100svh;
+      font-family: 'Inter', 'Cairo';
+      margin: 0;
+      background-color: var(--grey-900);
+    }
+
+    img {
+      max-inline-size: 100%;
+      block-size: auto;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    main {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      flex: 1;
+    }
+
+    #social {
+      padding: 1rem;
+    }
+
+    .social__wrapper {
+      width: 100%;
+      max-width: 375px;
+      margin-inline: auto;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      background-color: var(--grey-800);
+    }
+
+    .social__wrapper__profile {
+      text-transform: capitalize;
+      color: var(--main-color-white);
+    }
+
+    .social__wrapper__profile__name {
+      letter-spacing: 1px;
+      font-weight: 700;
+      margin-block-end: .5rem;
+    }
+
+    .social__wrapper__profile__location {
+      margin-block-start: 0;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--location-color-green);
+    }
+
+    .social__wrapper__profile__title {
+      text-transform: none;
+      font-weight: 400;
+      opacity: 50%;
+    }
+
+    .social__wrapper__profile__avatar {
+      max-width: 100px;
+      border-radius: 50%;
+    }
+
+    .social__wrapper__social-links {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      gap: .8rem;
+    }
+
+    .social__wrapper__social-links__button {
+      width: 100%;
+      padding: .8rem 0;
+      text-transform: capitalize;
+      font-weight: 600;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      color: var(--main-color-white);
+      background-color: var(--grey-700);
+      transition: all .3s ease;
+    }
+
+    .social__wrapper__social-links__button:hover {
+      background-color: var(--location-color-green);
+      cursor: pointer;
+      color: black;
+    }
+    
+
+    @media (min-width: 768px) {
+    .social__wrapper {
+        padding: 2rem;
+    }
+}
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-block-end: 1rem;
+      color: white;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section id="social">
+      <article class="social__wrapper container">
+        <header class="social__wrapper__profile">
+          <img src="assets/images/avatar-jessica.jpeg" alt="Jessica-avatar" class="social__wrapper__profile__avatar">
+          <h1 class="social__wrapper__profile__name">jessica randall</h1>
+          <h2 class="social__wrapper__profile__location">london, united kingdom</h2>
+          <p class="social__wrapper__profile__title">"Front-end developer and avid reader."</p>
+        </header>
+        <div class="social__wrapper__social-links">
+          <button class="social__wrapper__social-links__button">github</button><button
+            class="social__wrapper__social-links__button">frontend mentor</button><button
+            class="social__wrapper__social-links__button">linkedin</button><button
+            class="social__wrapper__social-links__button">twitter</button><button
+            class="social__wrapper__social-links__button">instagram</button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/HassanArafa-dev" target="_blank">Hassan Arafa</a>.
+  </div>
+</body>
+
+</html>
